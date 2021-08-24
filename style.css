@@ -6,18 +6,18 @@ body{
   overflow-x: hidden;
 }
 .navbar {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .form-inline {
   margin-left: 380px;
 }
 .form-inline input {
-  height: 37px;
+  height: 40px;
 }
 
-.header1 h1 {
+ h1 {
   font-family: "Lato", sans-serif;
-  font-weight: 300;
+  font-weight: 350;
   letter-spacing: 2px;
   font-size: 48px;
   padding: 3rem;
@@ -38,6 +38,7 @@ p {
     rgba(0, 172, 193, 1) 100%
   );
   color: white;
+
 }
 
 .logo {
@@ -49,7 +50,7 @@ p {
 }
 
 .inner-header {
-  height: 65vh;
+  height: 60vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -109,17 +110,40 @@ p {
   }
 }
 /*Shrinking for mobile*/
-@media (max-width: 768px) {
+@media screen and (max-width: 700px) {
   .waves {
-    height: 40px;
+    height: 60px;
     min-height: 40px;
   }
-  .content {
-    height: 30vh;
-  }
+ 
   h1 {
-    font-size: 24px;
+    font-size: 34px;
   }
+  .inner-header1{
+    background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  text-align: center;
+  color: rgb(253, 253, 253);
+  height: 750vh;
+  align-items: center;
+  position: relative;
+  }
+  .row .card{
+    margin: 2rem 5rem;
+    padding: 0.3rem 4rem;
+    
+    display: flexbox;
+    align-items: center;
+    margin: 2rem 5rem;
+    padding: 0.3rem 4rem;
+  }
+  
+ }
+
+
 }
 .inner-header1 {
   position: relative;
@@ -129,21 +153,24 @@ p {
     rgba(84, 58, 183, 1) 0%,
     rgba(0, 172, 193, 1) 100%
   );
-  color: white;
-  height: 200vh;
+  color: rgb(253, 253, 253);
+  height: 300vh;
 }
 .inner-header2 {
-  height: 40vh;
+  height: 5vh;
+  /* display: flex; */
+  text-align: center;
 }
 .inner-header2 a{
-    text-decoration: none;
+    text-decoration: dotted;
     color: black;
 }
 .row .card{
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 1rem 6rem;
+  margin: 3rem 5rem;
   padding: 0.3rem 1rem;
   color: black;
 }
@@ -162,8 +189,8 @@ p {
 
 /* Learn Page Style */
 .learn {
-  height: 95vh;
-  overflow: hidden;
+  height: 100vh;
+  overflow: auto;
   background: rgb(25, 35, 125);
 }
 .prompt {
