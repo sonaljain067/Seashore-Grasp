@@ -63,7 +63,12 @@ p {
   text-align: center;
 }
 
-#search
+#search{
+  margin: 0px;
+  position: relative;
+  bottom: 2px;
+  height: 37px;
+}
 
 .waves {
   position: relative;
