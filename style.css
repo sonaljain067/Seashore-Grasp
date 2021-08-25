@@ -1,6 +1,8 @@
 /* Home Page Style */
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300:400');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body{
   overflow-x: hidden;
@@ -54,6 +56,8 @@ p {
   margin: 0;
   padding: 0;
 }
+
+
 
 .flex {
   /*Flexbox for containers*/
@@ -137,8 +141,16 @@ p {
     rgba(0, 172, 193, 1) 100%
   );
   color: white;
-  height: 200vh;
 }
+
+.inner-header1 h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+.card h5{
+  font-family: 'Bebas Neue', cursive;
+}
+
 .inner-header2 {
   height: 40vh;
 }
@@ -147,14 +159,29 @@ p {
     color: black;
 }
 .row .card{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 1rem 6rem;
+  margin: 1rem 5.8rem;
   padding: 0.3rem 1rem;
   color: black;
+  border-radius: 5%;
+  align-items: center;
+  box-shadow: 10px 5px 10px #ccc;
+      -moz-box-shadow: 10px 5px 10px #ccc;
+      -webkit-box-shadow: 10px 5px 10px #ccc;
+      -khtml-box-shadow: 10px 5px 10px #ccc;
+}
+.card-img-top{
+  width: 100%;
+  height: 50%;
+  border-radius: 5%;
+  box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
 }
 
+@media screen and ( max-height: 600px ){
+  background: blue;
+}
 
 /* Home Page Style */
 
