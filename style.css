@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300:400');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 
 body{
   overflow-x: hidden;
@@ -17,9 +19,10 @@ body{
   height: 37px;
 }
 
+
 .header1 h1 {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: 500;
   letter-spacing: 2px;
   font-size: 48px;
   padding: 3rem;
@@ -27,7 +30,7 @@ body{
 p {
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 20px;
   color: #333333;
 }
 
@@ -137,8 +140,8 @@ p {
   text-align: center;
   background: linear-gradient(
     60deg,
-    rgba(84, 58, 183, 1) 0%,
-    rgba(0, 172, 193, 1) 100%
+    rgb(26, 26, 29) 0%,
+    rgb(0, 0, 0) 100%
   );
   color: white;
 }
@@ -159,11 +162,14 @@ p {
     color: black;
 }
 .row .card{
-  margin: 1rem 5.8rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0.3rem 1rem;
   color: black;
   border-radius: 5%;
   align-items: center;
+  justify-content: center;
   height: 25rem;
   width: 18rem;
   box-shadow: 10px 5px 10px #ccc;
