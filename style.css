@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 body{
   overflow-x: hidden;
@@ -21,7 +22,7 @@ body{
 
 
 .header1 h1 {
-  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Oswald', sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 48px;
@@ -140,8 +141,8 @@ p {
   text-align: center;
   background: linear-gradient(
     60deg,
-    rgb(26, 26, 29) 0%,
-    rgb(0, 0, 0) 100%
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
   );
   color: white;
 }
@@ -165,6 +166,8 @@ p {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
   padding: 0.3rem 1rem;
   color: black;
   border-radius: 5%;
@@ -172,19 +175,27 @@ p {
   justify-content: center;
   height: 25rem;
   width: 18rem;
-  box-shadow: 10px 5px 10px #ccc;
-      -moz-box-shadow: 10px 5px 10px #ccc;
-      -webkit-box-shadow: 10px 5px 10px #ccc;
-      -khtml-box-shadow: 10px 5px 10px #ccc;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
 }
 .card-img-top{
   width: 100%;
   height: 50%;
   border-radius: 5%;
-  box-shadow: 10px 10px 5px #ccc;
-      -moz-box-shadow: 10px 10px 5px #ccc;
-      -webkit-box-shadow: 10px 10px 5px #ccc;
-      -khtml-box-shadow: 10px 10px 5px #ccc;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
 }
 
 @media screen and ( max-height: 600px ){
