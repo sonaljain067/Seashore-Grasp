@@ -454,3 +454,89 @@ span#text{
 }
 /* Contact */
 
+
+/* FOOTER */
+
+.footer , .foot{
+  background-color: #19555f;
+  margin-bottom: 0px;
+
+}
+
+.co{
+  background-color: #19555f;
+  width: 50%;
+  margin-bottom: 0px;
+  padding-top: 2px;
+  padding-right: 26%;
+  cursor:context-menu;
+}
+.co h2{
+  color: #fff;
+  margin-bottom: 0px;
+  padding-left: 10%;
+  text-transform: uppercase;
+  border-bottom: 4px solid rgb(194, 194, 194);
+}
+.des{
+  font-size:17px;
+}
+span{
+  color: rgb(255, 255, 255);
+}
+.foot p {
+  color: #fff;
+  padding-left: 5%;
+  margin-bottom: 0px;
+}
+
+.foot2 p{
+background-color:#0c2b33;
+text-align: center;
+color: #fefefa;
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
+
+.icons{
+  float: right;
+  padding-right:2%;
+  color: white;
+  
+}
+
+i{
+  color: #fff;
+  margin-left: 30px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  float: left;
+
+}
+
+i:hover{
+    transform: scale(1.2);
+    transition: 0.5s all ease-in-out;
+
+}
+
+.fab:nth-child(1):hover{
+  color:#ee68af;
+}
+
+.fab:nth-child(2):hover{
+  color:#3b5998;
+}
+
+.fab:nth-child(3):hover{
+  color: #0077b5;
+}
+
+.fab:nth-child(4):hover{
+  color: #1DA1F2;
+
+}
+
+.f2{
+  font-size:18px;
+}
