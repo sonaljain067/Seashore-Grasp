@@ -689,13 +689,13 @@ span#text{
 /* FOOTER */
 
 .footer , .foot{
-  background-color: #19555f;
+  background-color: #007aa5;
   margin-bottom: 0px;
 
 }
 
 .co{
-  background-color: #19555f;
+  background-color: #007aa5;
   width: 50%;
   margin-bottom: 0px;
   padding-top: 2px;
@@ -719,10 +719,14 @@ span{
   color: #fff;
   padding-left: 5%;
   margin-bottom: 0px;
+  padding-bottom: 10px;
 }
 
 .foot2 p{
-background-color:#0c2b33;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-weight: bold;
+background-color:#202880;
 text-align: center;
 color: #fefefa;
 margin-bottom: 0px;
