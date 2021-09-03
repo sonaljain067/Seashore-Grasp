@@ -542,6 +542,47 @@ div.drop-container:after {
   }
 }
  
+/*card hover effect*/
+.card{
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.card:hover{
+  transform:scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0,0,0.5) ;
+}
+/*button hover effect*/
+a.btn.btn-primary{
+  transition: all 0.5s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+a.btn.btn-primary span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+a.btn.btn-primary span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+a.btn.btn-primary:hover span {
+  padding-right: 15px;
+}
+
+a.btn.btn-primary:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 /* Learn Page Style */
  
  
