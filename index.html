@@ -11,6 +11,13 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
   </head>
   <body>
+    <div class="loader-container">
+      <div class="atom">
+          <div class="electron"></div>
+          <div class="electron-alpha"></div>
+          <div class="electron-omega"></div>
+      </div>
+  </div>
     <!-- navbar starts-->
     <!-- <header> -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -141,7 +148,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Learn JavaScript - Full Course for Beginners</h5>
                   <p class="card-text"></p>
-                  <a href="https://youtu.be/PkZNo7MFNFg" class="btn btn-primary" target="_blank">Learn</a>
+                  <a href="https://youtu.be/PkZNo7MFNFg" class="btn btn-primary" target="_blank"><span>Learn</span></a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
@@ -149,7 +156,7 @@
                 <div class="card-body">
                   <h5 class="card-title">React JS Crash Course 2021</h5>
                   <p class="card-text"></p>
-                  <a href="https://youtu.be/w7ejDZ8SWv8" class="btn btn-primary" target="_blank">Learn</a>
+                  <a href="https://youtu.be/w7ejDZ8SWv8" class="btn btn-primary" target="_blank"><span>Learn</span></a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
@@ -159,7 +166,7 @@
                     SQL Tutorial - Full Database Course for Beginners
                     </h5>
                   <p class="card-text"></p>
-                  <a href="https://youtu.be/HXV3zeQKqGY" class="btn btn-primary" target="_blank">Learn</a>
+                  <a href="https://youtu.be/HXV3zeQKqGY" class="btn btn-primary" target="_blank"><span>Learn</span></a>
                 </div>
               </div>
             </div>
@@ -171,7 +178,7 @@
                   <h5 class="card-title">The Science of Everyday Thinking
                     </h5>
                   <p class="card-text"></p>
-                  <a href="https://www.edx.org/course/the-science-of-everyday-thinking" class="btn btn-primary" target="_blank">Learn</a>
+                  <a href="https://www.edx.org/course/the-science-of-everyday-thinking" class="btn btn-primary" target="_blank"><span>Learn</span></a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
@@ -179,7 +186,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Introduction to FinTech</h5>
                   <p class="card-text"></p>
-                  <a href="https://www.edx.org/course/introduction-to-fintech" class="btn btn-primary" target="_blank">Learn</a>
+                  <a href="https://www.edx.org/course/introduction-to-fintech" class="btn btn-primary" target="_blank"><span>Learn</span></a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
@@ -189,7 +196,7 @@
                     Fundamentals of TinyML
                     </h5>
                   <p class="card-text"></p>
-                  <a href="https://www.edx.org/course/fundamentals-of-tinyml" class="btn btn-primary" target="_blank">Learn</a>
+                  <a href="https://www.edx.org/course/fundamentals-of-tinyml" class="btn btn-primary" target="_blank"><span>Learn</span></a>
                 </div>
               </div>
             </div>
@@ -201,7 +208,7 @@
                   <h5 class="card-title">Data Structures and Algorithms (IV)
                     </h5>
                   <p class="card-text"></p>
-                  <a href="https://www.coursera.org/learn/data-structures-algorithms-4" class="btn btn-primary" target="_blank">Learn</a>
+                  <a href="https://www.coursera.org/learn/data-structures-algorithms-4" class="btn btn-primary" target="_blank"><span>Learn</span></a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
@@ -211,7 +218,7 @@
                     Generative Adversarial Networks (GANs) Specialization
                     </h5>
                   <p class="card-text"></p>
-                  <a href="https://www.coursera.org/specializations/generative-adversarial-networks-gans" class="btn btn-primary" target="_blank">Learn</a>
+                  <a href="https://www.coursera.org/specializations/generative-adversarial-networks-gans" class="btn btn-primary" target="_blank"><span>Learn</span></a>
                 </div>
               </div>
               <div class="card" style="width: 18rem;">
@@ -221,7 +228,7 @@
                     Open Source Software Development, Linux and Git Specialization
                     </h5>
                   <p class="card-text"></p>
-                  <a href="https://www.coursera.org/specializations/oss-development-linux-git" class="btn btn-primary" target="_blank">Learn</a>
+                  <a href="https://www.coursera.org/specializations/oss-development-linux-git" class="btn btn-primary" target="_blank"><span>Learn</span></a>
                 </div>
               </div>
             </div>
@@ -239,7 +246,23 @@
           <h2><a href="contact.html">Contact Us</a></h2>
         </div>
       </div>
-
+      <script>
+        let loader = document.querySelector(".loader-container");
+    
+    window.addEventListener("load", vanish);
+    
+    function vanish() {
+      loader.classList.add("disappear");
+    }
+    $(function () {
+      $("a.nav-link").each(function () {
+        if ($(this).prop("href") == window.location.href) {
+          $(this).addClass("current-link");
+        }
+      });
+    });
+        </script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
   </body>
 </html>
