@@ -1,5 +1,5 @@
 /* Home Page Style */
- 
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300'); 
 @import url('https://fonts.googleapis.com/css?family=Lato:300:400');
 
  
@@ -421,6 +421,67 @@ p {
 @media screen and ( max-height: 600px ){
   background: blue;
 }
+
+.footer{
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: #bbb;
+}
+
+.footer a {
+  color: #999;
+  text-decoration:none;
+  margin-left: 20px;
+}
+
+
+.footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+.footer .form-control {
+  margin-bottom: 20px;
+  background-color: #1f2022;
+  border-radius: 5px;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  box-shadow:  4px 4px 2px #1f1f1f,
+               -4px -4px 2px #7b7b7b;
+  border: none;
+  resize: none;
+  color: #020202;
+  padding: 0.7em 1em;
+}
+@media (max-width: 567em) {
+  body {
+    margin-bottom: 0px;
+  }
+  .footer {
+    height: 300px;
+  }
+}
+
+#send{
+  background: #ECB22E;
+  border-radius: 5px;
+  background: linear-gradient(
+    60deg,
+    rgba(84, 58, 183, 1) 0%,
+    rgba(0, 172, 193, 1) 100%
+  );
+  box-shadow:  4px 4px 2px #1f1f1f,
+               -4px -4px 2px #7b7b7b;
+}
+
+.footer .form-control::placeholder{
+  color: #020202;
+}
+
  
 /* Home Page Style */
  
