@@ -11,7 +11,7 @@
 		60deg,
 		rgba(84, 58, 183, 1) 0%,
 		rgba(0, 172, 193, 1) 100%);
-	font-size: 12px;
+	font-size: 0.75rem;
   }
   
   body, button, input {
